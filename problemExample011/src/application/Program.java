@@ -3,13 +3,20 @@ package application;
 public class Program {
 
 	public static void main(String[] args) {
-		int result = Sequentials.fibonacci(30);
+
+		int length = 30,
+				half = length/2,
+				limit = 100,
+				result;
+
+		result = Sequential.fibonacci(length);
 		Printer.print("fibonacci: " + result);
 		
-		result = Sequentials.arithmeticProgression(100);
+		result = Sequential.arithmeticProgression(limit);
 		Printer.print("arithmetic progression: " + result);
 		
-		result = Sequentials.geometricProgression(length/2);
+		result = Sequential.geometricProgression(half);
+		Printer.print("geometric progression: " + result);
 
 	}
 
