@@ -31,7 +31,7 @@ public class Structure {
 		String[] words = new String[10];
 		
 		for (int i = 0; i < words.length; i++) {
-			words[i] = "\nstudent number: " + (i + 1);
+			words[i] = "\nstudent number: " + (i + 1) + "\n";
 		}
 		
 		return words;
