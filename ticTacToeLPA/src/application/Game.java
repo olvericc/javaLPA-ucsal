@@ -24,7 +24,7 @@ public class Game {
         char character = ' ';
 
         if (userTurn.equals("p1")) {
-            character = 'x';a
+            character = 'x';
             p1Positions.add(position);
         } else if (userTurn.equals("p2")) {
             character = 'o';
