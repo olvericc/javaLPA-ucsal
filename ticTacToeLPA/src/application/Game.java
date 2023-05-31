@@ -2,13 +2,13 @@ package application;
 
 public class Game {
 
-    public static String[][] gameBoard () {
-        return new String[][]{
-                {" ", "|", " ","|", " "},
-                {"-", "+", "-","+", "-"},
-                {" ", "|", " ","|", " "},
-                {"-", "+", "-","+", "-"},
-                {" ", "|", " ","|", " "}
+    public static char[][] gameBoard () {
+        return new char[][]{
+                {' ', '|', ' ','|', ' '},
+                {'-', '+', '-','+', '-'},
+                {' ', '|', ' ','|', ' '},
+                {'-', '+', '-','+', '-'},
+                {' ', '|', ' ','|', ' '},
         };
     }
 
@@ -35,5 +35,4 @@ public class Game {
             default -> {}
         }
     }
-
 }
