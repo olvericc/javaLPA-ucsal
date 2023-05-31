@@ -25,8 +25,10 @@ public class Game {
 
         if (userTurn.equals("p1")) {
             character = 'x';
+            p1Positions.add(position);
         } else if (userTurn.equals("p2")) {
             character = 'o';
+            p2Positions.add(position);
         }
 
         switch (position) {
@@ -78,7 +80,6 @@ public class Game {
                 return "play again!";
             }
         }
-
         return "";
     }
 }
