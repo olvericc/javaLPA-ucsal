@@ -1,12 +1,14 @@
 package application;
 
+import java.util.Scanner;
+
 public class Executer {
 
     public static void main(String[] args) {
 
-        String word = Game.getRandomWord();
+        Scanner sc = new Scanner(System.in);
 
-        Printer.print(word);
+
 
     }
 }
