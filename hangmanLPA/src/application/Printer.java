@@ -1,55 +1,61 @@
 package application;
 
 import java.util.List;
-import java.util.Scanner;
 
 public class Printer {
+
+    public static void print (String args) {
+        System.out.print(args);
+    }
+
     public static void printMan(Integer wrongCount) {
-        System.out.println(" -------");
-        System.out.println(" |     |");
+        Printer.print(" -------");
+        Printer.print(" |     |");
+
         if (wrongCount >= 1) {
-            System.out.println(" O");
+            Printer.print(" O");
         }
 
         if (wrongCount >= 2) {
-            System.out.print("\\ ");
+            Printer.print("\\ ");
             if (wrongCount >= 3) {
-                System.out.println("/");
+                Printer.print("/");
             } else {
-                System.out.println();
+                Printer.print("");
             }
         }
 
         if (wrongCount >= 4) {
-            System.out.println(" |");
+            Printer.print(" |");
         }
 
         if (wrongCount >= 5) {
-            System.out.print("/ ");
+            Printer.print("/ ");
             if (wrongCount >= 6) {
-                System.out.println("\\");
+                Printer.print("\\");
             } else {
-                System.out.println();
+                Printer.print("");
             }
         }
-        System.out.println();
-        System.out.println();
+
+        Printer.print("");
+        Printer.print("");
     }
 
     public static boolean printWord(String word, List<Character> playerGuesses) {
-        int correctCount = 0;
+        int count = 0;
+
         for (int i = 0; i < word.length(); i++) {
             if (playerGuesses.contains(word.charAt(i))) {
                 System.out.print(word.charAt(i));
-                correctCount++;
+                count++;
             } else {
-                System.out.print("-");
+                Printer.print("-");
             }
         }
-        System.out.println();
 
-        return (word.length() == correctCount);
+        Printer.print("");
+
+        return (word.length() == count);
     }
-
-
 }
