@@ -8,7 +8,7 @@ public class Executer {
 
         Scanner sc = new Scanner(System.in);
 
-        Printer.print("single-player or multi-player? (1 / 2)");
+        Printer.println("single-player or multi-player? (1 / 2)");
 
         String typeOfGame = sc.nextLine();
 

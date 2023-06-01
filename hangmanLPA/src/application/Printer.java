@@ -8,38 +8,42 @@ public class Printer {
         System.out.print(args);
     }
 
+    public static void println (String args) {
+        System.out.println(args);
+    }
+
     public static void printMan(Integer wrongCount) {
-        Printer.print(" -------");
-        Printer.print(" |     |");
+        System.out.println(" -------");
+        System.out.println(" |     |");
 
         if (wrongCount >= 1) {
-            Printer.print(" O");
+            System.out.println(" O");
         }
 
         if (wrongCount >= 2) {
-            Printer.print("\\ ");
+            System.out.print("\\ ");
             if (wrongCount >= 3) {
-                Printer.print("/");
+                System.out.println("/");
             } else {
-                Printer.print("");
+                System.out.println();
             }
         }
 
         if (wrongCount >= 4) {
-            Printer.print(" |");
+            System.out.println(" |");
         }
 
         if (wrongCount >= 5) {
-            Printer.print("/ ");
+            System.out.print("/ ");
             if (wrongCount >= 6) {
-                Printer.print("\\");
+                System.out.println("\\");
             } else {
-                Printer.print("");
+                System.out.println();
             }
         }
 
-        Printer.print("");
-        Printer.print("");
+        System.out.println();
+        System.out.println();
     }
 
     public static boolean printWord(String word, List<Character> playerGuesses) {
@@ -54,7 +58,7 @@ public class Printer {
             }
         }
 
-        Printer.print("");
+        System.out.println();
 
         return (word.length() == count);
     }
