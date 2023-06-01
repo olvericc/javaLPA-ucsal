@@ -11,10 +11,6 @@ public class Game {
     static List<String> hiddenWords = new ArrayList<>(Arrays.asList(words));
     static Random random = new Random();
 
-    public static void addWordsInList() {
-        hiddenWords.addAll(Arrays.asList(words));
-    }
-
     public static String getRandomWord() {
         return hiddenWords.get(random.nextInt(hiddenWords.size()));
     }
